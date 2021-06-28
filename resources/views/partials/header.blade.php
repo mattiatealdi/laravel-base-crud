@@ -24,7 +24,10 @@
                 <a class="nav-link{{--  {{ (request()->is('contacts')) ? active : ''}} --}}" href="/contacts">Contacts</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="/comics.index">Comics</a>
+                <a class="nav-link" href="{{ route('comics.index') }}">Comics</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{{ route('comics.create') }}">Add Comic</a>
               </li>
             {{-- <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">

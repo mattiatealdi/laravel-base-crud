@@ -32,8 +32,8 @@
             </tbody>
         </table>
     </section>
-    {{-- <section class="container">
+    <section class="container">
         {{ $comics->links() }}
-    </section> --}}
+    </section>
 
 @endsection

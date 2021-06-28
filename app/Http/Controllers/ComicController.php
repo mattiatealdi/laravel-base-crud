@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Comic;
 use Illuminate\Http\Request;
 
 class ComicController extends Controller
@@ -52,7 +53,10 @@ class ComicController extends Controller
         //
         $comic = Pasta::find($id);
         dd($comic);
-        return view('comics.show', compact($comic));
+        if($comic){
+            return view('comics.show', compact($comic));
+        }
+        abort(404);
     }
 
     /**
