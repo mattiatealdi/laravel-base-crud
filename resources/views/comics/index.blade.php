@@ -24,9 +24,9 @@
                         <td>{{ $comic->price }}</td>
                         <td>{{ $comic->series }}</td>
                         <td>{{ $comic->type }}</td>
-                        <td><a href="{{ route('comics.show', $comics->id) }}" class="btn btn-success"></a>SHOW</td>
-                        <td><a href="" class="btn btn-primary"></a>EDIT</td>
-                        <td><a href="" class="btn btn-secondary"></a> DELETE</td>
+                        <td><a href="{{ route('comics.show', $comic->id) }}" class="btn btn-success">SHOW</a></td>
+                        <td><a href="" class=""></a>EDIT</td>
+                        <td><a href="" class=""></a> DELETE</td>
                     </tr>
                 @endforeach
             </tbody>
